@@ -1,0 +1,342 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a3c6e;
+    padding: 1rem 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    background: transparent;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background: transparent;
+    /* Explicitly ensure no background overrides */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: text-decoration 0.3s ease;
+    background: transparent;
+    /* Explicitly ensure no background overrides */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.logout button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.logout button:hover {
+    background-color: #36bd17;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #1a3c6e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.copyright {
+    background: transparent;
+}
+
+/* dashboard Banner CSS */
+
+.dashboard-banner{
+    width: 100%;
+    height: 40vh;
+    background:linear-gradient(to right, #1a3c6e, #9333ea);
+    /* background: linear-gradient(#e66465, #9198e5); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dashboard-banner-content{
+    text-align: center;
+    background: transparent;
+}
+
+.dashboard-banner-content h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: transparent;
+    color: white;
+
+}
+.dashboard-banner-content p{
+    font-size: 1.2em;
+    background: transparent;
+    color: white;
+}
+
+.common-titles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.common-titles-content{
+    text-align: center;
+    background: transparent;
+
+}
+.common-titles-content h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #1b2f4c;
+}
+.common-titles-content p{
+    font-size: 1.2em;
+    background: transparent;
+    color: #0949ab;
+
+}
+
+/* our programs card */
+.our-programs-card{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0, 0, 0.1);
+    background-color: white;
+}
+.our-programs-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.our-programs-card-content{
+    padding: 16px;
+    background: transparent;
+}
+.our-programs-card-title{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    background: transparent;
+}
+
+.our-programs-card-description{
+    font-size: 14px;
+    color: #555;
+    background: transparent;
+}
+.our-programs{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: transparent;
+}
+.our-values-card{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    color: #3b5998;
+    font-size: 1em;
+}
+.our-values-card .icon{
+height: 24px;
+width: 24px;
+margin-right: 10px;
+background: transparent;
+}
+.our-values-card .text{
+display: flex;
+flex-direction: column;
+font-weight: bold;
+background: transparent;
+}
+.our-values-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+    background: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.our-courses-card{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0, 0, 0.1);
+    background-color: white;
+}
+.our-courses-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.our-courses-card-content{
+    padding: 16px;
+    background: transparent;
+}
+.our-courses-card-title{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    background: transparent;
+}
+
+.our-courses-card-description{
+    font-size: 14px;
+    color: #555;
+    background: transparent;
+}
+.our-courses{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: transparent;
+}
+.our-courses-card{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    color: #3b5998;
+    font-size: 1em;
+}
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0 ,0 ,0 ,0 ,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+/* /Modal Box/ */
+.modal-box{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0 ,0 ,0 ,0 ,0.3);
+}
+/* /title/ */
+.modal-title{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+/* /Close Button(X)/ */
+.modal-close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #555;
+}
+/* /Content/ */
+.modal-content{
+    font-size: 16px;
+}
+
+/* /popup model/ */
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 ,0 ,0 ,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+/* /Modal Box/ */
+.modal-box{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0 ,0 ,0 ,0 ,0.3);
+}
+/* /title/ */
+.modal-title{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+/* /Close Button(X)/ */
+.modal-close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #555;
+}
+/* /Content/ */
+.modal-content{
+    font-size: 16px;
+}
+.add-title{
+    text-align: center;
+}
+.add-content p{
+    margin: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
