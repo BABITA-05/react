@@ -21,6 +21,7 @@ function Admissions() {
             <button onClick={increment}>Increase</button>
 
             <button onClick={decrement}>Decrease</button>
+            
             <button onClick={() => setModalOpen(true)}>View Student Detail</button>
             <AdmissionsPopUpModal isModalOpen={isModalOpen} setModelOpen={setModalOpen} />
         </main>

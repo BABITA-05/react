@@ -5,10 +5,10 @@ function AdmissionsPopUpModal({ isModalOpen,setModelOpen }) {
         <div className='modal-overlay'>
             <div className='modal-box'>
                 <button className='modal-close' onClick={()=>setModelOpen(false)}>X</button>
-                <h2 className='add-title'>Aayushma Kafle</h2>
+                <h2 className='add-title'>Babita Bhandari</h2>
                 <div className='add-content'>
                     <p>Course:CSIT</p>
-                    <p>College:Shiksyalaya</p>
+                    <p>College:Shikshyalaya</p>
                     <p>Batch:2081</p>
                     <p>Section:A</p>
                     </div>
